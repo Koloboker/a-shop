@@ -1,34 +1,101 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>A-Shop — Главная</title>
-
+    <title>Электроника — Магазин</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>A-Shop</h1>
-        <p>Добро пожаловать на наш сайт!</p>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">⚡ ЭлектроStore</a>
+            <nav class="nav">
+                <a href="#" class="nav__link">Каталог</a>
+                <a href="#" class="nav__link">Доставка</a>
+                <a href="#" class="nav__link">Контакты</a>
+            </nav>
+            <div class="cart">🛒 <span class="cart__count">0</span></div>
+        </div>
     </header>
 
-    <main>
-        <section class="card">
-            <h2>Наш сайт</h2>
-            <p>Это тестовый сайт, созданный с использованием HTML, CSS и JavaScript.</p>
+    <main class="main">
+        <div class="container">
+            <h1 class="main__title">Популярные товары</h1>
 
-            <button onclick="showMessage()">Нажми на меня</button>
-        </section>
+            <section class="products">
+                <!-- Карточка 1 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=300&fit=crop" alt="Смартфон" class="card__img">
+                    <div class="card__body">
+                        <h2 class="card__title">Смартфон Galaxy X20</h2>
+                        <p class="card__price">49 990 ₽</p>
+                        <button class="card__btn" onclick="buyProduct('Смартфон Galaxy X20')">Купить</button>
+                    </div>
+                </article>
+
+                <!-- Карточка 2 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=300&fit=crop" alt="Ноутбук" class="card__img">
+                    <div class="card__body">
+                        <h2 class="card__title">Ноутбук ProBook 15</h2>
+                        <p class="card__price">89 990 ₽</p>
+                        <button class="card__btn" onclick="buyProduct('Ноутбук ProBook 15')">Купить</button>
+                    </div>
+                </article>
+
+                <!-- Карточка 3 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop" alt="Наушники" class="card__img">
+                    <div class="card__body">
+                        <h2 class="card__title">Наушники SoundMax</h2>
+                        <p class="card__price">7 990 ₽</p>
+                        <button class="card__btn" onclick="buyProduct('Наушники SoundMax')">Купить</button>
+                    </div>
+                </article>
+
+                <!-- Карточка 4 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop" alt="Смарт-часы" class="card__img">
+                    <div class="card__body">
+                        <h2 class="card__title">Смарт-часы FitWatch</h2>
+                        <p class="card__price">12 990 ₽</p>
+                        <button class="card__btn" onclick="buyProduct('Смарт-часы FitWatch')">Купить</button>
+                    </div>
+                </article>
+
+                <!-- Карточка 5 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400&h=300&fit=crop" alt="Планшет" class="card__img">
+                    <div class="card__body">
+                        <h2 class="card__title">Планшет TabPad 11</h2>
+                        <p class="card__price">34 990 ₽</p>
+                        <button class="card__btn" onclick="buyProduct('Планшет TabPad 11')">Купить</button>
+                    </div>
+                </article>
+
+                <!-- Карточка 6 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400&h=300&fit=crop" alt="Колонка" class="card__img">
+                    <div class="card__body">
+                        <h2 class="card__title">Умная колонка HomePod</h2>
+                        <p class="card__price">9 990 ₽</p>
+                        <button class="card__btn" onclick="buyProduct('Умная колонка HomePod')">Купить</button>
+                    </div>
+                </article>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>© 2026 A-Shop. Все права защищены.</p>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2025 ЭлектроStore. Все права защищены.</p>
+            <p>Телефон: 8 (800) 123-45-67</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
